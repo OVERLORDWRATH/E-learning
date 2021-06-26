@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <h1>E-Learning</h1>
+      </div>
+
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#contact" class="login">Contact us</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="top-wrapper">
+    <div class="heading">
+      <h1>HELLO WORLD<span>.</span></h1>
+    </div>
+    <div class="container">
+      <h1>LEARN TO CODE.</h1>
+      <h1>LEARN TO BE CREATIVE.</h1>
+      <p>This is a web service where you can learn programming online.</p>
+      <p>We offer you a free coding environment to get you started.</p>
+    </div>
+  </div>
+  <div id="lessons" class="lesson-wrapper">
+    <h3 class="section">Lessons</h3>
+    <input type="text" id="myInput" placeholder="course" onkeyup="search()">
+    <ul class="lessons">
+      <a href="#">
+        <li class="lesson">
+          <div class="lesson-icon">
+            <img src="img/lb.png">
+            <p>HTML & CSS</p>
+          </div>
+          <p class="txt-contents">Languages used to build and design the appearances of your websites. HTML adds the
+            structure, and CSS styles it.</p>
+        </li>
+      </a>
+      <a href="#">
+        <li class="lesson">
+          <div class="lesson-icon">
+            <img src="img/r.png">
+            <p>JavaScript</p>
+          </div>
+          <p class="txt-contents">JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.</p>
+        </li>
+      </a>
+      <a href="#">
+        <li class="lesson">
+          <div class="lesson-icon">
+            <img src="img/y.png">
+            <p>MongoDB</p>
+          </div>
+          <p class="txt-contents">MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.</p>
+        </li>
+      </a>
+      <a href="#">
+        <li class="lesson">
+          <div class="lesson-icon">
+            <img src="img/r.png">
+            <p>Node.js</p>
+          </div>
+          <p class="txt-contents">Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine).</p>
+        </li>
+      </a>
+    </ul>
+  </div>
+
+  <div id="contact" class="contact-form">
+    <h3 class="section">Contact us</h3>
+    <form method="post" class="contact-form-inner">
+      <label for="">Name</label><br />
+      <input class="name" type="text" placeholder="name" required="required" /><br />
+      <label for="">Email</label><br />
+      <input class="email" type="email" placeholder="email" required="required" /><br />
+      <label for="">Message</label><br />
+      <textarea class="messageplace" required="required" maxlength="300" name="" id="" cols="30" rows="9"
+        placeholder="message"></textarea><br />
+      <p>* Required fields must be filled</p>
+      <button type="submit" class="btn message">Submit</button>
+    </form>
+    <div id="status"></div>
+  </div>
+
+  <!-- <script>
+      const search = () => {
+  let filter = document.getElementById('myInput').value;
+} -->
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+/* Reset CSS (DO NOT DELETE) */
+/* * {
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next";
+  height:100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+/* Write your code below */
+header {
+  height: 90px;
+  width: 100%;
+  background-color:rgba(8, 195, 195, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left h1 {
+  float:left;
+  font-size:36px;
+  padding:20px 40px;
+  font-weight: normal;
+}
+
+.header-right {
+  float: right;
+  margin-right: 5px;
+}
+
+.header-right a {
+  line-height: 90px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.lesson-wrapper {
+  height: 500px;
+  padding:100px 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+
+.heading h1{
+  font-size:140px;
+  margin-bottom: 7rem;
+}
+
+.heading span{
+  color:#ff4a4a;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align:center;
+  color: #184c6b;
+  font-weight: bold;
+}
+
+/* .heading h2 {
+  font-weight: normal;
+} */
+
+.section{
+  font-size:28px;
+  border-bottom:2px solid #dee7ec;
+  padding-bottom:15px;
+  margin-bottom:50px;
+  text-align: left;
+}
+
+
+.lesson {
+  float: left;
+  width: 25%;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+ul a:hover {
+  height: 100%;
+  background-color:blue;
+}
+
+.lesson:hover {
+  background-color: rgba(0, 252, 76, 0.377);
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.contact-form {
+  /* padding-top: 100px; */
+  /* text-align:center; */
+  padding:100px 80px;
+}
+
+input,textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+.contact-form-inner p{
+  cursor: default;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.message {
+  padding: 15px 180px;
+  background-color: rgb(75,127,128,70%);
+  cursor: pointer;
+  box-shadow: 0 7px #2a4554;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+#status {
+  width:13em;
+  text-align:center;
+  padding: 10px;
+  margin:1em 6em;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color:greenyellow;
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color:red;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
